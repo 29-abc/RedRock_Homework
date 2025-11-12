@@ -1,0 +1,243 @@
+* {
+    margin: auto;
+    text-align: center;
+}
+
+#body {
+    width: 435px;
+    height: 660px;
+}
+
+#wangyi_logo {
+    padding-top: 15px;
+    padding-bottom: 55px;
+}
+
+#input {
+    width: 319px;
+    height: 97px;
+}
+
+.line {
+    width: 321px;
+    height: 46px;
+}
+
+.phone {
+    float: left;
+    width: 35px;
+    height: 30px;
+    padding: 7px 0;
+    border-radius: 7px 0 0 0;
+    border: 1px gray solid;
+    border-right: 0;
+}
+
+.select_phone {
+    float: left;
+    width: 70px;
+    height: 30px;
+    padding: 7px 0;
+    border: 1px gray solid;
+    border-left: 0;
+}
+
+.select_phone_nav {
+    width: 55px;
+    height: 20px;
+    border: 0;
+    color: gray;
+}
+
+.text {
+    float: left;
+    text-align: left;
+    width: 213px;
+    height: 44px;
+    border: 1px gray solid;
+    border-left: 0;
+    border-radius: 0 8px 0 0;
+    background-color: white;
+}
+.text_nav {
+    width: 196px;
+    height: 34px;
+    text-align: left;
+    border: 0;
+    padding: 5px 1px 5px 10px;
+}
+
+.password { 
+    float: left;
+    width: 35px;
+    height: 31px;
+    padding: 7px 0;
+    border-radius: 0 0 0 7px;
+    border: 1px gray solid;
+    border-right: 0;
+    border-top: 0;
+}
+
+.password_input {
+    float: left;
+    width: 284px;
+    height: 45px;
+    border-radius: 0 0 8px 0;
+    border: 1px gray solid;
+    border-top: 0;
+    border-left: 0;
+    background-color: white;
+}
+
+.password_input_nav {
+    width: 275px;
+    height: 44px;
+    border: 0;
+    padding: 0;
+    text-align: left;
+}
+
+.a2_box a {
+    text-decoration: none;
+}
+
+.checkbox1 {
+    float: left;
+    width: 20px;
+    height: 41px;
+    border-top: 7px white solid;
+    text-align: left;
+}
+
+.checkbox1_nav {
+    width: 18px;
+    height: 18px;
+}
+
+.login_auto {
+    float: left;
+    width: 76px;
+    height: 42px;
+    color: gray;
+    font-size: 15px;
+    border-top: 6px white solid;
+    text-align: left;
+    padding-left: 9px;
+}
+
+.a2_box {
+    float: left;
+    width: 216px;
+    height: 30px;
+    border-top: 6px white solid;
+    text-align: right;
+}
+
+.forget_password {
+    display: inline-block;
+    font-size: 15px;
+    color: #3587c7;
+    padding: 0 10px;
+    border-right: 1px gray solid;
+}
+
+.login_yanzhengma {
+    display: inline-block;
+    font-size: 15px;
+    color: #3587c7;
+    padding: 0 0 0 10px ;
+}
+
+.white {
+    height: 46px;
+    background-color: white;
+}
+.login {
+    width: 321px;
+    height: 42px;
+    border-radius: 8px;
+    background-color: #ff393a;
+    padding-top: 4px;
+}
+
+.login_nav {
+    font-size: 20px;
+    color: white;
+    background-color: #ff393a;
+    border: 0;
+    padding-top: 3px;
+}
+
+.register {
+    display: inline-block;
+    width: 321px;
+    height: 36px;
+    padding-top: 10px;
+    font-size: 20px;
+    color: black;
+}
+
+.white2 {
+    height: 30px;
+    background-color: white;
+}
+
+.line2 {
+    height: 46px;
+}
+
+.line2 img {
+    display: inline-block;
+    height: 40px;
+    padding: 0px 20px;
+}
+
+.line3 {
+    color: gray;
+    height: 46px;
+    padding-top: 25px;
+}
+
+.checkbox2 {
+    width: 15px;
+    height: 15px;
+}
+
+.line3 a {
+    color: #3587c7;
+    text-decoration: none;
+}
+
+.line0 {
+    height: 60px;
+}
+
+.erweima {
+    float: left;
+    height: 60px;
+}
+
+.text_top {
+    float: left;
+    position: relative;
+    width: 121px;
+    height: 24px;
+    color: white;
+    font-size: 13px;
+    background-color: #999999;
+    border-radius: 0 5px 5px 5px;
+    margin-top: 15px;
+    padding: 4px 8px;
+}
+
+.text_top::before {
+    content: '';
+    position: absolute;
+    top: -2px;
+    left: -5px;
+    margin-top: 1px;
+    border-width: 10px 8px 0 0;
+    border-style: solid;
+    border-color: #999999 transparent;
+    transform: rotate(90deg);
+}
