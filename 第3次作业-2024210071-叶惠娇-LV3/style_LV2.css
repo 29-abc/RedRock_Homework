@@ -1,0 +1,77 @@
+html,
+body {
+    height: 100%;
+    margin: 0;
+}
+
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+[title="card"] {
+    width: 375px;
+    height: 480px;
+    background-color: #628fbc;
+    border-radius: 15px;
+    color: #001326;
+    font-size: 20px;
+}
+
+[title="card"]:hover {
+    transform: scale(0.8);
+    transition: all 2s ease;
+}
+
+[title="top"] {
+    width: 50px;
+    height: 50px;
+    margin-top: 25px;
+    margin-left: 25px;
+    margin-bottom: 5px;
+    border-radius: 5px;
+    background: #628fbc url(mmexport4fcde9ef806024f15a25a2b4a613b3ee_1763360.jpeg) no-repeat 0 0;
+    background-size: 50px 50px;
+}
+
+[title="card"] p {
+    margin: 0 25px;
+}
+
+[title="line1"] {
+    font-weight: 700;
+    line-height: 40px;
+}
+
+[title="line2"] {
+    font-weight: 700;
+    line-height: 40px;
+}
+
+[title="line3"] {
+    font-size: 18px;
+    font-weight: 400;
+    line-height: 35px;
+}
+
+[title="foot"] {
+    text-align: center;
+    height: 65px;
+    margin-top: 27px;
+}
+
+[title="button"] {
+    display: inline-block;
+    width: 165px;
+    height: 43px;
+    border-radius: 10px;
+    color: #001326;
+    font-size: 18px;
+    font-weight: 700;
+}
+
+[title="button"]:active {
+    transform: scale(0.7);
+    transition: all 2s ease;
+}
