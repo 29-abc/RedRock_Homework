@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+</head>
+
+<body>
+  <script>
+    let obj = {
+      name: 'Duckyo',
+      age: 3,
+      gender: 'unknown'
+    }
+
+    function copy(insertObj) {
+      let newObj = {}
+      for (let i in insertObj) {
+        newObj[i] = insertObj[i]
+      }
+      return newObj
+    }
+
+    // 使用复制函数复制对象
+    let obj1 = copy(obj)
+
+    // 使用数组复制对象
+    let arr0 = new Array()
+    arr0.push(obj)
+    let obj2 = Array.from(arr0)[0]
+
+    // 直接复制对象
+    let obj3 = obj
+
+    let arr = []
+    arr.push(obj1, obj2, obj3)
+    console.table(arr)
+  </script>
+</body>
+
+</html>
