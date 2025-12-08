@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>计算n!</title>
+</head>
+
+<body>
+  <script>
+    let factorial_XunHuan = (a) => {
+      let result = 1
+      for (let i = 1; i <= a; i++) {
+        result = result * i
+      }
+      return result
+    }
+    console.log('1. 循环计算n!')
+    console.log('1! = ' + factorial_XunHuan(1))
+    console.log('2! = ' + factorial_XunHuan(2))
+    console.log('3! = ' + factorial_XunHuan(3))
+    console.log('4! = ' + factorial_XunHuan(4))
+    console.log('5! = ' + factorial_XunHuan(5))
+    console.log('6! = ' + factorial_XunHuan(6))
+    console.log('7! = ' + factorial_XunHuan(7))
+    console.log('8! = ' + factorial_XunHuan(8))
+    console.log('9! = ' + factorial_XunHuan(9))
+    console.log('10! = ' + factorial_XunHuan(10))
+
+    let factorial_DiGui = (a) => {
+      let result = 1;
+      if (a == 1)
+        return result
+      else
+        return a * factorial_DiGui(a - 1)
+    }
+    console.log('2. 递归计算n!')
+    console.log('1! = ' + factorial_DiGui(1))
+    console.log('2! = ' + factorial_DiGui(2))
+    console.log('3! = ' + factorial_DiGui(3))
+    console.log('4! = ' + factorial_DiGui(4))
+    console.log('5! = ' + factorial_DiGui(5))
+    console.log('6! = ' + factorial_DiGui(6))
+    console.log('7! = ' + factorial_DiGui(7))
+    console.log('8! = ' + factorial_DiGui(8))
+    console.log('9! = ' + factorial_DiGui(9))
+    console.log('10! = ' + factorial_DiGui(10))
+  </script>
+</body>
+
+</html>
