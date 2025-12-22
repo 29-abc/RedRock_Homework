@@ -19,11 +19,13 @@
       title: ['student', { year: 2025, title: 'GoodStudent' }]
     }
 
-    const { name } = person
+    /* const { name } = person
     const { age: year } = person
     const { address: { city } } = person
     const { address: { area: mountain } } = person
-    const { title: [title1, { title: title2 }] } = person
+    const { title: [title1, { title: title2 }] } = person */
+
+    const { name, age: year, address: { city, area: mountain }, title: [title1, { title: title2 }] } = person
 
     console.log(name) // 小明
     console.log(year) // 18
