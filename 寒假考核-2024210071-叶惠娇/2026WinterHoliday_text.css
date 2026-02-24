@@ -1,0 +1,461 @@
+html,body {
+  height: 100%;
+  margin: 0;
+}
+
+body {
+  display: flex;
+}
+
+#sidebar {
+ width: 240px;
+ height: auto;
+ background-color: rgb(240,243,246);
+}
+
+.logo {
+  width: 145px;
+  padding: 15px 0 25px 22px;
+}
+
+.top {
+  height: 200px;
+  width: 170px;
+  padding: 5px 0 0 15px;
+}
+
+.middle {
+  margin: 0;
+  height: 230px;
+  width: 170px;
+  padding: 5px 0 0 15px;
+}
+
+.bottom {
+  height: 40px;
+  width: 170px;
+  padding-top: 10px;
+  border-bottom: 1px solid rgb(228, 232, 236);
+}
+
+ul {
+  margin: 0;
+  width: 130px;
+  padding: 9px 12px 13px 0;
+  border-bottom: 1px solid rgb(228,232,236);
+}
+
+li {
+  width: 152px;
+  height: 35px;
+  font-size: 15px;
+  color: gray;
+  list-style-type: none;
+  border-radius: 9px;
+  padding: 4px 4px 0 6px;
+}
+
+li img {
+  float: left;
+  width: 25px;
+}
+
+li .nav {
+  float: right;
+  padding: 3px 90px 1px 0 ;
+}
+
+.my {
+  height: 21px;
+  font-size: 12px;
+  font-weight: 800;
+  color: rgb(160,166,177);
+  padding:30px 0 0 10px;
+}
+
+.middle li .nav_music {
+  padding-left: 30px;
+}
+
+.middle li .nav {
+  padding: 5px 60px 0 0;
+}
+
+.middle li .nav_more {
+  font-size: 12px;
+  font-weight: 800;
+  color: rgb(160, 166, 177);
+  padding-left: 32px;
+}
+
+.middle ul {
+  padding-bottom:5px;
+}
+
+.bottom .playlist {
+  float: left;
+  font-size: 13px;
+  font-weight: 800;
+  color: gray;
+  padding: 0 50px 0 15px;
+}
+
+.bottom img {
+  width: 20px;
+}
+
+.sidebar_right {
+  width: 100%;
+}
+
+#header {
+  height: 70px;
+  width: 100%;
+}
+
+.header_left {
+  float: left;
+  width: 400px;
+  height: 100%;
+}
+
+.left {
+  float: left;
+  width: 35px;
+  padding: 13px 0 10px 40px;
+}
+
+.left button {
+  width: 27px;
+  height: 33px;
+  border: 1px solid rgb(226,229,233);
+  border-radius: 8px;
+  background-color: white;
+  padding: 4px 0 1px 0;
+}
+
+.left button img {
+  width: 17px;
+}
+
+.between {
+  float: left;
+  width: 245px;
+  margin-top: 13px;
+  padding: 4px 0 3px 15px;
+  border-radius: 8px;
+  border: 1px solid white;
+  background-image: linear-gradient(to right, rgb(218,230,250), rgb(246,226,242));
+}
+
+.between img {
+  float: left;
+  width: 28px;
+}
+
+#search {
+  float: left;
+  width: 190px;
+  height: 13px;
+  padding: 5px 10px 5px 6px;
+  border: none;
+  background-color: rgba(255,255,255,0);
+}
+
+input:focus {
+  outline: none;
+}
+
+.right {
+  float: left;
+  width: 50px;
+  margin: 10px 0 0 8px;
+  padding: 3px 0 0 2px;
+}
+
+.right button {
+  width: 33px;
+  height: 34px;
+  border-radius: 5px;
+  background-color: rgb(246, 226, 242);
+  border: 1px solid rgb(246, 226, 242);
+  padding: 4px 2px;
+}
+
+.right img {
+  width: 25px;
+}
+
+.header_right1 {
+  float: right;
+  width: 150px;
+  height: 100%;
+}
+
+.header_right1 img {
+  width: 18px;
+  float: left;
+  padding: 25px 0 20px 12px;
+}
+
+.header_right2 {
+  float: right;
+  width: 350px;
+  height: 100%;
+}
+
+.header_right2 img {
+  float: left;
+  width: 19px;
+  padding: 23px 0 20px 10px;
+}
+
+.header_right2 .photo_touxiang {
+  width: 30px;
+  padding-left: 25px;
+  padding-top: 20px;
+}
+
+.name {
+  float: left;
+  font-size: 15px;
+  color: gray;
+  padding: 23px 0 0 5px;
+}
+
+.header_right2 .photo_vip {
+  width: 80px;
+  padding-top: 25px;
+}
+
+.header_right2 .photo_gexing {
+  margin: 23px 0 20px 10px;
+  padding: 0 13px 0 0;
+  border-right: 1px solid rgb(226, 229, 233);
+}
+
+.pages {
+  position: relative;
+  width: 100%;
+  height: 100%;
+}
+
+.first_page {
+  width: 100%;
+  height: 100%;
+  display: block;
+}
+
+#daily_recommendation {
+  width: 100%;
+  height: 265px;
+  display: flex;
+}
+
+#daily_recommendation img {
+  width: 183px;
+  height: 235px;
+  padding: 20px 0 20px 15px;
+}
+
+#daily_recommendation .music1 {
+  margin-left: 25px;
+}
+
+#recommendation {
+  width: 100%;
+  height: 250px;
+}
+
+#recommendation p {
+  color: rgb(40,50,72);
+  font-weight: 800;
+  font-size: 20px;
+  padding-left: 35px;
+  margin: 15px 0;
+}
+
+#recommendation .musics {
+  display: flex;
+}
+
+#recommendation .musics img {
+  width: 140px;
+  border-radius: 5px;
+}
+
+#recommendation .musics .music_first {
+  height: 200px;
+  width: 140px;
+  margin-left: 36px;
+  margin-right: 15px;
+}
+
+#recommendation .musics .m {
+  height: 200px;
+  width: 140px;
+  margin-right: 15px;
+}
+
+#recommendation .musics p {
+  padding: 0;
+  font-size: 14px;
+  font-weight: 300;
+  color: rgb(113, 120, 136);
+  margin: 5px 0;
+}
+
+#selection {
+  width: 100%;
+  height: 328px;
+}
+
+#selection p {
+  color: rgb(40, 50, 72);
+  font-weight: 800;
+  font-size: 20px;
+  padding-left: 35px;
+  margin: 15px 0;
+}
+
+.lunfantu {
+  width: 100%;
+  max-width: 1390px;
+  margin-left: 35px;
+  overflow: hidden;
+  position: relative;
+}
+
+#carousel_track {
+  display: flex;
+  transition: transform 0.5s ease-in-out;
+}
+
+.carousel_item {
+  min-width: 25%;
+}
+
+.carousel_card {
+  width: 95%;
+  overflow: hidden;
+  cursor: pointer;
+}
+
+.carousel_card img {
+  width: 100%;
+  height: 100%;
+  border-radius: 5px;
+  object-fit: cover;
+}
+
+#carousel_indicators {
+  display: flex;
+  justify-content: center;
+  gap: 8px;
+  margin-top: 16px;
+}
+
+.indicator {
+  width: 8px;
+  height: 8px;
+  border-radius: 50%;
+  background: #ccc;
+  cursor: pointer;
+}
+
+.indicator.active {
+  background: #333;
+}
+
+.second_page {
+  display: none;
+  width: 100%;
+  height: 100%;
+}
+
+.nav1 {
+  height: 30px;
+  width: 95%;
+  margin-top: 10px;
+  padding: 11px 0 2px 40px;
+  font-size: 16px;
+  color: gray;
+}
+
+.nav1 span {
+  padding-right: 20px;
+}
+
+.nav2 {
+  height: 50px;
+  width: 95%;
+  margin-left: 40px;
+  margin-top: 15px;
+}
+
+.nav2 button {
+  color: rgb(55,65,85);
+  background-color: white;
+  font-size: 13px;
+  border-radius: 15px;
+  border: 1px solid rgb(181, 184, 186);
+  padding: 5px 16px;
+  margin-right: 10px;
+}
+
+.musics_guanfang {
+  width: 100%;
+  height: 100%;
+}
+
+.line1 {
+  display: flex;
+  width: 95%;
+  height: 350px;
+  margin-left: 40px;
+}
+
+.line2 {
+  display: flex;
+  width: 95%;
+  height: 350px;
+  margin-left: 40px;
+}
+
+.second_page img {
+  width: 210px;
+  height: 280px;
+  border-radius: 12px;
+}
+
+.gedanguangchang_music {
+  position: relative;
+  width: 210px;
+  height: 280px;
+  margin: 8px 20px 0 0;
+}
+
+.gedanguangchang_music span {
+  position: absolute;
+  width: 195px;
+  height: 47px;
+  padding: 10px 7px 5px 7px;
+  border-bottom-left-radius: 12px;
+  border-bottom-right-radius: 12px;
+  color: white;
+  left: 0;
+  bottom: 0;
+  background-color: rgba(0, 0, 0, 0.5);
+}
+
+.nav1 .select1 {
+  font-size: 18px;
+  color: black;
+  font-weight: 800;
+}
+
+.nav2 .select2 {
+  color: rgb(255,58,58);
+  background-color: rgb(248,234,237);
+  border: 1px solid rgb(248, 234, 237);
+}
