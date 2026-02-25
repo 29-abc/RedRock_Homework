@@ -360,7 +360,7 @@ input:focus {
   height: 8px;
   border-radius: 50%;
   background: #ccc;
-  cursor: pointer;
+  cursor: pointer;     
 }
 
 .indicator.active {
