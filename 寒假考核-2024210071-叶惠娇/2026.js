@@ -1,4 +1,4 @@
-// 首页——轮番图
+// 首页——轮播图
 const track = document.getElementById('carousel_track');
 const indicators = document.querySelectorAll('.indicator');
 const itemsPerPage = 4;
@@ -11,7 +11,7 @@ function updata_carousel() {
   const offset = -currentPage * 100;
   track.style.transform = `translateX(${offset}%)`;    // 参考豆包
   indicators.forEach((ind, i) => {
-    ind.classList.toggle('active', i === currentPage);
+    ind.classList.toggle('active', i === currentPage);    // 参考豆包
   })
 }
 
