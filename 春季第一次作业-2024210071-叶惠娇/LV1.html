@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <style>
+    div {
+      text-align: center;
+      margin-top: 100px;
+    }
+
+    input {
+      height: 25px;
+      width: 300px;
+    }
+
+    input:focus {
+      outline: none;
+    }
+  </style>
+</head>
+
+<body>
+  <div>
+    <input type="text" placeholder="防抖" id="debounce_input">
+  </div>
+  <div>
+    <input type="text" placeholder="节流" id="throttle_input">
+  </div>
+
+  <script>
+    // 防抖
+    const searchInput1 = document.getElementById('debounce_input');
+    function debounce(fn, delay = 1000) {
+      let timer = null
+
+      return function () {
+        const lastTime = 0
+        if (timer) {
+          clearTimeout(timer)
+        }
+        timer = setTimeout(() => {
+          fn.apply(this, arguments)
+          timer = null
+        }, delay)
+      }
+    }
+
+    searchInput1.addEventListener('input', debounce((event) => {
+      console.log('发送搜索请求(防抖)：', event.target.value)
+    }, 1000))
+
+    // 节流
+    const searchInput2 = document.getElementById('throttle_input')
+    function throttle(fn, delay = 1000) {
+      let lastTime = 0
+
+      return function () {
+        const nowTime = Date.now()
+        if (nowTime - lastTime >= delay) {
+          lastTime = nowTime
+          fn.apply(this, arguments)
+        }
+      }
+    }
+
+    searchInput2.addEventListener('input', throttle((event) => {
+      console.log('发送搜索请求(节流)：', event.target.value)
+    }, 1000))
+  </script>
+</body>
+
+</html>

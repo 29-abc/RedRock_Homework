@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+</head>
+
+<body>
+  <br>* 整体script作为第一个宏任务进入主线程，遇到console.log，直接输出 1。
+  <br>* 遇到setTimeout，其回调函数被分配到宏任务中。
+  <br>* 遇到foo()，直接输出“start”。遇到bar()，直接输出“bar”，暂停当前的foo()，等待后面的promise完成。
+  <br>* 遇到new Promise直接输出“p1”，then分配到微任务中。
+  <br>* 遇到console.log，直接输出 2。
+  <br>* await bar()后面的Promise全部完成，回到foo()中bar()的下一个语句，遇到console.log，直接输出“end”
+  <br>* 第一轮事件循环的宏任务结束，剩下微任务then，直接输出“p2”。
+  <br>* 第二轮事件循环开始，执行setTimeout宏任务，直接输出“time”。
+  <br>* 代码全部执行完毕。
+
+  <script>
+    async function foo() {
+      console.log("start");
+      await bar();
+      console.log("end");
+    }
+
+    async function bar() {
+      console.log("bar");
+    }
+
+    console.log(1);
+
+    setTimeout(() => {
+      console.log("time");
+    });
+
+    foo();
+
+    new Promise((resolve) => {
+      console.log("p1");
+      resolve();
+    }).then(() => {
+      console.log("p2");
+    });
+
+    console.log(2);
+  </script>
+</body>
+
+</html>
